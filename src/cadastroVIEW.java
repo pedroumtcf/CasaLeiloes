@@ -154,7 +154,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
                 return;
             }
 
-            double valor = Double.parseDouble(valorStr);
+            double valor = Double.parseDouble(valorStr.replace(",", "."));
 
             ProdutosDTO produto = new ProdutosDTO();
             produto.setNome(nome);
